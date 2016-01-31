@@ -1,1 +1,9 @@
-<h3>JOLLY TESTING</h3>
+<%=form_tag sessions_path do %>
+<div class="signin-form">
+  <label>Username</label>
+    <%= text_field_tag :username %>
+  <label>Password</label>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Log In", class: "button submit"%>
+</div>
+<%end%>
